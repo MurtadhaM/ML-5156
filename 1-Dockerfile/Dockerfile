@@ -44,7 +44,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && curl -sSL https://repo.continuum.io/miniconda/Miniconda3-${MINICONDA_VERSION}-Linux-x86_64.sh -o $HOME/miniconda.sh \
-    && chown -R ${HOST_USER}:${HOST_GID} $HOME
+    && chown -R ${HOST_USER}:${HOST_GID} $HOME 
 ################# TODO 5 #################
 USER $HOST_USER
 ################# TODO 6 #################
@@ -68,12 +68,13 @@ RUN pip install --upgrade pip \
     && rm pip_requirements.txt
 RUN echo 'export PS1="\[\033[1;36m\]\u@\[\033[1;32m\]\h:\[\033[1;34m\]\w\[\033[0m\]\$ "' >> ${HOME}/.bashrc
 ################# TODO 9 #################
+# WE COULD USE ENTRYPOINT INSTEAD OF CMD TO BYPASS /sbin/sh -c bash passing arguments
 CMD /bin/bash
 ################ TODO 10 #################
 #*************** BUILDING THE IMAGE ***************#
 # docker build -t docker-lab-5156 . 
 #*************** TAGGING THE IMAGE ***************#
-# docker tag docker-lab-5156 mmarzouq/docker-lab-5156 \
+# docker tag docker-lab-5156 mmarzouq/docker-lab-5156 
 #*************** PUSHING THE IMAGE ***************#
 # docker push mmarzouq/docker-lab-5156  \
 #*************** RUNNING THE IMAGE ***************#

@@ -10,3 +10,4 @@ RUN apt-get update && \
 # EASY START
 CMD ["/opt/conda/bin/jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser","--allow-root"]
 
+
