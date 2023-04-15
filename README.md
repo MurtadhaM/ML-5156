@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-
 - [Machine Learning: Twitter Hashtag Credibility Prediction](#machine-learning-twitter-hashtag-credibility-prediction)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
