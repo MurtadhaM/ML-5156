@@ -1,25 +1,20 @@
 # Machine Learning: Twitter Hashtag Credibility Prediction
 
 ## Table of Contents
-
 - [Machine Learning: Twitter Hashtag Credibility Prediction](#machine-learning-twitter-hashtag-credibility-prediction)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [](#)
   - [Data Collection](#data-collection)
   - [Data Analysis](#data-analysis)
-  - [](#-1)
   - [References](#references)
   - [License](#license)
   - [Author](#author)
-
-
 ## Introduction
 
 ---
+
 <a href="./Research/">![](https://img.shields.io/badge/Written-Report-Yellow)
 </a>    
----
 The project aims to predict the credibility of a tweet based on the hashtags used in the tweet. The project is divided into two parts:
 
 1. Data Collection
@@ -41,9 +36,10 @@ TWINT is a tool that allows you to make requsts to Twitter without needing an AP
 ## Data Analysis
 
 ---
+
 <a href="./Project/SentimentAnalysis.ipynb">![](https://img.shields.io/badge/Interactive-Notebook-red)
 </a>    
----
+
 - [ ] Data Cleaning
 - [ ] Data Visualization
 - [ ] Data Modeling
